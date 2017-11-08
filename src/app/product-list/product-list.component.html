@@ -1,0 +1,8 @@
+<p>
+  All your products here
+</p>
+<ul>
+  <li *ngFor="let product of products| async">
+    {{ product.name }}  {{ product.isAvailable }} 
+  </li>
+</ul>
