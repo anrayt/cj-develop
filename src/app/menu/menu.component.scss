@@ -1,8 +1,4 @@
-$menu-color: #000;
-$menu-color-hover: rgba(255, 255, 255, .8);
-$menu-color-background: rgba(255, 255, 255, .5);
-$menu-color-active: #fff;
-$menu-color-active-background: rgba(0, 0, 0, .5);
+@import '~sass/variables';
 
 .menu-wrapper {
     position: fixed;

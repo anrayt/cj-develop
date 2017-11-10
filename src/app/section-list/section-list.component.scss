@@ -1,0 +1,25 @@
+@import '~sass/variables';
+
+.section {
+  text-align: center;
+}
+
+.welcome-section {
+  background: linear-gradient($welcome-section-degree, $welcome-section-first-color, $welcome-section-second-color);
+}
+
+.install-section {
+  background: linear-gradient($install-section-degree, $install-section-first-color, $install-section-second-color);
+}
+
+.usage-section {
+  background: linear-gradient($usage-section-degree, $usage-section-first-color, $usage-section-second-color);
+}
+
+.slides-section {
+  background: linear-gradient($slides-section-degree, $slides-section-first-color, $slides-section-second-color);
+}
+
+.start-use-it-now-section {
+  background: linear-gradient($start-use-it-now-section-degree, $start-use-it-now-section-first-color, $start-use-it-now-section-second-color);
+}

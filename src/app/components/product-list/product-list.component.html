@@ -1,0 +1,8 @@
+<p>
+  All your products here
+</p>
+
+<div *ngFor="let product of products| async" class="slide">
+    <h1>{{ product.name }} {{ product.isAvailable }}</h1>
+</div>
+

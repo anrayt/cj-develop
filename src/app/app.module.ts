@@ -4,19 +4,23 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductService } from './product-list/product.service';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { ProductService } from './components/product-list/product.service';
 
 import { FirebaseModule } from './firebase';
 
 import { MnFullpageModule } from 'ngx-fullpage';
 import { MenuComponent } from './menu/menu.component';
+import { SectionListComponent } from './section-list/section-list.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
-    MenuComponent
+    MenuComponent,
+    SectionListComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
