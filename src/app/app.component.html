@@ -1,10 +1,66 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  
+<div class="menu-wrapper">
+    <ul class="menu">
+        <li data-menuanchor="menuAnchor1" class="active">
+            <a href="#menuAnchor1">Купить</a>
+        </li>
+        <li data-menuanchor="menuAnchor2">
+            <a href="#menuAnchor2">Информация</a>
+        </li>
+        <li data-menuanchor="menuAnchor3">
+            <a href="#menuAnchor3">Товары</a>
+        </li>
+        <li data-menuanchor="menuAnchor4">
+            <a href="#menuAnchor4">Картинки</a>
+        </li>
+        <li data-menuanchor="menuAnchor5">
+            <a href="#menuAnchor5">О нас</a>
+        </li>
+        <li data-menuanchor="menuAnchor6">
+            <a href="#menuAnchor6">Контакты</a>
+        </li>
+    </ul>
 </div>
-<h2>Demo</h2>
-<app-product-list></app-product-list>
+<div id="content-wrapper" [mnFullpage]="options" [mnFullpageNavigation]="true" [mnFullpageKeyboardScrolling]="true" [mnFullpageSlidesNavigation]="true"
+    mnFullpageSlidesNavPosition="bottom">
 
+    <div class="section welcome-section fp-section fp-table">
+        <div class="fp-tableCell">
+            <h1>СУПЕР</h1>
+            <h2>ПРЕДЛОЖЕНИЕ</h2>
+            <h4>бла бла бла бла</h4>
+            <!-- <img class="right" src="../assets/img/KXL-E40.png" alt="device" /> -->
+
+            <button class="btn btn-danger">Купить</button>
+        </div>
+    </div>
+    <div class="section welcome-section fp-section fp-table">
+        <div class="fp-tableCell">
+            <app-product-list></app-product-list>
+        </div>
+    </div>
+    <div class="section welcome-section fp-section fp-table">
+        <div class="fp-tableCell">
+            <h2>Demo</h2>
+        </div>
+    </div>
+    <div class="section usage-section fp-section fp-table">
+        <div class="slide">
+            <h1>Many ways to configure!</h1>
+        </div>
+        <div class="slide">
+            <h1>Configure it via attributes</h1>
+        </div>
+    </div>
+    <div class="section welcome-section fp-section fp-table">
+        <div class="fp-tableCell">
+            <h2>Demo</h2>
+        </div>
+
+    </div>
+    <div class="section welcome-section fp-section fp-table">
+        <div class="fp-tableCell">
+            <h2>Demo</h2>
+        </div>
+
+    </div>
+</div>

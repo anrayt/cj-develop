@@ -9,6 +9,8 @@ import { ProductService } from './product-list/product.service';
 
 import { FirebaseModule } from './firebase';
 
+import { MnFullpageModule } from 'ngx-fullpage';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { FirebaseModule } from './firebase';
     BrowserModule,
     FormsModule,
     HttpModule,
-    FirebaseModule
+    FirebaseModule,
+    MnFullpageModule.forRoot()
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
