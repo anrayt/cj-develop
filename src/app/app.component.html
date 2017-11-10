@@ -1,38 +1,47 @@
-<div class="menu-wrapper">
-    <ul class="menu">
-        <li data-menuanchor="menuAnchor1" class="active">
-            <a href="#menuAnchor1">Купить</a>
-        </li>
-        <li data-menuanchor="menuAnchor2">
-            <a href="#menuAnchor2">Информация</a>
-        </li>
-        <li data-menuanchor="menuAnchor3">
-            <a href="#menuAnchor3">Товары</a>
-        </li>
-        <li data-menuanchor="menuAnchor4">
-            <a href="#menuAnchor4">Картинки</a>
-        </li>
-        <li data-menuanchor="menuAnchor5">
-            <a href="#menuAnchor5">О нас</a>
-        </li>
-        <li data-menuanchor="menuAnchor6">
-            <a href="#menuAnchor6">Контакты</a>
-        </li>
-    </ul>
-</div>
+<div menu class="menu-wrapper"></div>
 <div id="content-wrapper" [mnFullpage]="options" [mnFullpageNavigation]="true" [mnFullpageKeyboardScrolling]="true" [mnFullpageSlidesNavigation]="true"
     mnFullpageSlidesNavPosition="bottom">
 
     <div class="section welcome-section fp-section fp-table">
         <div class="fp-tableCell">
-            <h1>СУПЕР</h1>
-            <h2>ПРЕДЛОЖЕНИЕ</h2>
-            <h4>бла бла бла бла</h4>
-            <!-- <img class="right" src="../assets/img/KXL-E40.png" alt="device" /> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                            
 
-            <button class="btn btn-danger">Купить</button>
+                        <div class="row">
+                            <div class="col">
+                                <h1>СУПЕР</h1>
+                                <h2>ПРЕДЛОЖЕНИЕ</h2>
+                                <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                    took a galley of type and scrambled it to make a type specimen book. It has survived
+                                    not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                                    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                                    including versions of Lorem Ipsum.</h4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-danger">Купить</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col">
+                        <img src="../assets/img/KXL-E40.png" alt="device" />
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
     </div>
+
     <div class="section welcome-section fp-section fp-table">
         <div class="fp-tableCell">
             <app-product-list></app-product-list>

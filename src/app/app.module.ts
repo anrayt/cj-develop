@@ -10,11 +10,13 @@ import { ProductService } from './product-list/product.service';
 import { FirebaseModule } from './firebase';
 
 import { MnFullpageModule } from 'ngx-fullpage';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent
+    ProductListComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

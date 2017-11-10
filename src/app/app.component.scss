@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
-
-$body-color: #333;
-
-$menu-color: #000;
-$menu-color-hover: rgba(255, 255, 255, .8);
-$menu-color-background: rgba(255, 255, 255, .5);
-$menu-color-active: #fff;
-$menu-color-active-background: rgba(0, 0, 0, .5);
+@import "./menu/menu.component.scss";
 
 $section-code-background: rgba(255, 255, 255, .1);
 
@@ -30,82 +23,14 @@ $start-use-it-now-section-degree: 45deg;
 $start-use-it-now-section-first-color: rgba(255, 255, 255, .2);
 $start-use-it-now-section-second-color: $slides-section-second-color;
 
-body {
-  font-family: 'Titillium Web', Arial sans-serif;
-  color: $body-color;
-}
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  color: #444;
-}
-
-h1 {
-  font-size: 3em;
-}
-
-h4 {
-  font-size: 1.3em;
+img {
+  max-width:100%;
+  max-height:100%;
 }
 
 #fp-nav {
   top: 50% !important;
-}
-
-.menu-wrapper {
-  position: fixed;
-  width: 100%;
-  z-index: 70;
-  text-align: center;
-  height: 40px;
-  margin: auto;
-}
-
-.menu {
-  padding: 0;
-}
-
-.menu li {
-  display: inline-block;
-  margin: 10px;
-  color: $menu-color;
-  background: $menu-color-active;
-  background: $menu-color-background;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.menu li.active {
-  background: #666;
-  background: $menu-color-active-background;
-  color: $menu-color-active;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: $menu-color;
-}
-
-.menu li.active a:hover {
-  color: $menu-color;
-}
-
-.menu li:hover {
-  background: $menu-color-hover;
-}
-
-.menu li a,
-.menu li.active a {
-  padding: 9px 18px;
-  display: block;
-}
-
-.menu li.active a {
-  color: $menu-color-active;
 }
 
 .section {
