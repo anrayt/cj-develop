@@ -23,7 +23,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
     HomePageComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'cj-develop'}),
     FormsModule,
     HttpModule,
     FirebaseModule,
