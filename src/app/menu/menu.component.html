@@ -1,5 +1,12 @@
 <ul class="menu">
+    <li class="url">
+        <a href="#">lazernaya-ruletka.com</a>
+    </li>
     <li *ngFor="let item of menuItems" attr.data-menuanchor="{{ item.anchor }}" [ngClass]="item.isActive&&'active'">
         <a href="#{{ item.anchor }}">{{ item.name }} </a>
     </li>
+    <li class="cell_phone">
+        <a  href="#">+38(050)-404-53-76</a>
+    </li>
+    
 </ul>

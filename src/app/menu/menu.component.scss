@@ -10,45 +10,52 @@
   }
   
   .menu {
-    padding: 0;
+    background: $menu-color-background;
   }
   
   .menu li {
+    list-style: none;
     display: inline-block;
-    margin: 10px;
-    color: $menu-color;
-    background: $menu-color-active;
-    background: $menu-color-background;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    text-align: center;
+    position: relative;
+    padding: 5px 10px;
+    z-index: 10;
   }
-  
-  .menu li.active {
-    background: #666;
-    background: $menu-color-active-background;
-    color: $menu-color-active;
-  }
-  
   .menu li a {
     text-decoration: none;
-    color: $menu-color;
+    position: relative;
+    padding: 6px 0;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    color: rgb(255, 255, 255);
   }
-  
-  .menu li.active a:hover {
-    color: $menu-color;
+  .menu li a:after {
+    content: '';
+    width: 0%;
+    margin-left: 50%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 40%;
+    position: absolute;
+    transition: all 0.5s;
   }
-  
-  .menu li:hover {
-    background: $menu-color-hover;
+  .menu li a:hover:after {
+    background-color: $menu-color-active;
+    width: 80%;
+    margin-left: 10%;
+    box-shadow:  $menu-color-active-shadow;
   }
-  
-  .menu li a,
-  .menu li.active a {
-    padding: 9px 18px;
-    display: block;
+  .menu li a.active:after {
+    background-color: $menu-color-active;
+    width: 80%;
+    margin-left: 20%;
+    box-shadow:  $menu-color-active-shadow;
   }
-  
-  .menu li.active a {
-    color: $menu-color-active;
+  .url{
+    float: left;
+  }
+  .cell_phone{
+    padding: 5px 0;
+    position: relative;
+    float: right;
   }
