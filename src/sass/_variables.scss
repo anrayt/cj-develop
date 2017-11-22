@@ -1,15 +1,22 @@
-$body-color: #333;
-$menu-color: #000;
+$font-family-first: 'Roboto', sans-serif;
+$font-family-second: 'Roboto Slab', serif;
+
+$body-color: rgb(0, 0, 0);
+$menu-color: rgb(255, 255, 255);
 $menu-color-hover: rgba(255, 255, 255, .8);
-$menu-color-background: rgba(255, 255, 255, .5);
-$menu-color-active: #fff;
+$menu-color-background: rgb(0, 0, 0);
+$menu-color-active: rgb(253, 2, 2);
+$menu-color-active-shadow: 0px 0px 20px rgb(253, 253, 253);
 $menu-color-active-background: rgba(0, 0, 0, .5);
+
+$button-hover-color: rgb(0, 255, 8);
+$button-hover-text-color: #fff;
 
 $section-code-background: rgba(255, 255, 255, .1);
 
-$welcome-section-degree: 90deg;
-$welcome-section-first-color: rgba(255, 177, 0, 0.2);
-$welcome-section-second-color: rgba(52, 0, 255, 0.4);
+$welcome-section-degree: 180deg;
+$welcome-section-first-color: rgb(255, 255, 255) 0%;   
+$welcome-section-second-color:  rgb(255, 255, 255) 10%;
 
 $install-section-degree: 90deg;
 $install-section-first-color: rgba(32, 255, 0, .2);
