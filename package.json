@@ -33,6 +33,7 @@
     "@types/mime": "^2.0.0",
     "@types/serve-static": "^1.13.1",
     "angular2-universal": "^2.1.0-rc.1",
+    "angular2-useful-swiper": "^5.0.1",
     "angularfire2": "^5.0.0-rc.3",
     "body-parser": "^1.18.2",
     "bootstrap": "^4.0.0-beta.2",
@@ -44,6 +45,7 @@
     "ngx-fullpage": "^4.0.6",
     "preboot": "^5.1.7",
     "rxjs": "^5.5.2",
+    "swiper": "^3.4.2",
     "ts-loader": "^3.1.1",
     "zone.js": "^0.8.14"
   },

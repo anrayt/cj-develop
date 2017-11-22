@@ -9,6 +9,7 @@ import { ProductService } from './components/product-list/product.service';
 
 import { FirebaseModule } from './firebase';
 
+import { SwiperModule } from 'angular2-useful-swiper';
 import { MnFullpageModule } from 'ngx-fullpage';
 import { MenuComponent } from './menu/menu.component';
 import { SectionListComponent } from './section-list/section-list.component';
@@ -27,6 +28,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
     FormsModule,
     HttpModule,
     FirebaseModule,
+    SwiperModule,
     MnFullpageModule.forRoot()
   ],
   providers: [ProductService],
