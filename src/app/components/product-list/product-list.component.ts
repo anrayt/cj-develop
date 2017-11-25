@@ -1,6 +1,5 @@
 import { Component, ViewEncapsulation, Output } from '@angular/core';
 import { ProductService } from './product.service';
-import { Meta, MetaDefinition } from '@angular/platform-browser';
 
 import { Product } from './product';
 import { Observable } from 'rxjs/Observable';
@@ -25,17 +24,12 @@ export class ProductListComponent {
     spaceBetween: 30
   };
 
-  constructor(productService: ProductService, private metaService: Meta) {
+  constructor(productService: ProductService) {
     this.productService = productService;
     this.products = this.productService.getAllPorducts();
-    this.products.subscribe((d) => {
-      this.productsReal = d;
+    this.products.subscribe((productsReal) => {
+      this.productsReal = productsReal;
     });
-    const name: MetaDefinition[] = [{
-      name: 'application-name',
-      content: 'application-content'
-    }];
-    metaService.addTags(name);
   }
 }
 

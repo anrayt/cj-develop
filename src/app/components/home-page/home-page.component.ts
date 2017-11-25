@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { MnFullpageService } from 'ngx-fullpage';
 
 @Component({
   selector: 'home-page',
@@ -7,8 +8,15 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class HomePageComponent implements OnInit {
+  service: MnFullpageService;
 
-  constructor() { }
+  constructor(service: MnFullpageService) {
+    this.service = service;
+  }
+
+  moveToContactForm() {
+    this.service.moveTo(4);
+  }
 
   ngOnInit() {
   }

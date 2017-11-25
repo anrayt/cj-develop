@@ -14,6 +14,8 @@ import { MnFullpageModule } from 'ngx-fullpage';
 import { MenuComponent } from './menu/menu.component';
 import { SectionListComponent } from './section-list/section-list.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
     ProductListComponent,
     MenuComponent,
     SectionListComponent,
-    HomePageComponent
+    HomePageComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'cj-develop'}),
