@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC');
 @import './variables';
 @import './mixins';
 
@@ -17,7 +18,7 @@ body {
   }
   li{
     font-family: $font-family-second;
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
   h1 {
     font-size: 2em;

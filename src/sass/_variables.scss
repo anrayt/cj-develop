@@ -1,15 +1,15 @@
-$font-family-first: 'Roboto', sans-serif;
-$font-family-second: 'Roboto Slab', serif;
+$font-family-first: 'Open Sans', sans-serif;
+$font-family-second: 'Spectral SC', serif;
 
 $body-color: rgb(0, 0, 0);
 $menu-color: rgb(255, 255, 255);
 $menu-color-hover: rgba(255, 255, 255, .8);
-$menu-color-background: rgb(0, 0, 0);
+$menu-color-background: rgba(0, 0, 0, 0.693);
 $menu-color-active: rgb(253, 2, 2);
-$menu-color-active-shadow: 0px 0px 20px rgb(253, 253, 253);
+$menu-color-active-shadow: 0px 0px 20px rgb(244, 108, 108);
 $menu-color-active-background: rgba(0, 0, 0, .5);
 
-$button-hover-color: rgb(0, 255, 8);
+$button-hover-color: rgba(3, 204, 26, 0.7);
 $button-hover-text-color: #fff;
 
 $section-code-background: rgba(255, 255, 255, .1);
